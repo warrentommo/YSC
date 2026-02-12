@@ -1,0 +1,52 @@
+# YSC Org Chart
+
+```mermaid
+
+flowchart TB
+
+A[Executive Director]
+
+%% Executive Office
+A --> AA[Administrative Assistant]
+
+%% Child Care Services
+A --> B[Deputy Director<br>Child Care Services]
+B --> B1[Secretary]
+B --> B2[Child Care Coordinator]
+B2 --> B3[Senior Child Care Workers (5)]
+B3 --> B4[Child Care Workers (45]
+B --> B5[Social Workers (5)]
+
+%% Child Rehabilitation Services
+A --> C[Director<br>Child Rehabilitation Services]
+C --> C1[Secretary]
+C --> C2[Youth Rehabilitation Coordinator]
+C2 --> C3[Senior Youth Services Officers (5)]
+C3 --> C4[Youth Services Officers (45)<br>8-hour shifts]
+C2 --> C5[Trained Teachers (5)]
+C --> C6[Social Workers (5)<br>Caseload ≤ 15]
+
+%% Clinical Services
+A --> D[Clinical Services Manager]
+D --> D1[Secretary]
+D --> D2[Registered Nurse (1)]
+D --> D3[Clinical Psychologists (2)]
+D --> D4[Counselling Psychologists (4)]
+D --> D5[Medical Doctor (Sessional)]
+D --> D6[Psychiatrist (Sessional)]
+
+%% Human Resources
+A --> E[Human Resources Manager]
+E --> E1[Human Resources Officer (1)]
+
+%% Operations Management
+A --> F[Operations Manager]
+F --> F1[Maintenance Officers / Groundsmen (3)]
+F --> F2[Office Attendants (2)]
+F --> F3[Drivers (3)]
+F --> F4[Procurement & Inventory Officer]
+F --> G[Head Chef (1)]
+G --> G1[Cooks]
+G --> G2 [Kitchen Assistants]
+
+```
